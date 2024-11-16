@@ -11,6 +11,7 @@ $schema: 'https://moonrepo.dev/schemas/workspace.json'
 # When using glob patterns, you should avoid map-style project definitions.
 projects:
   docusaurus: 'apps/docs'
+  questapi: 'apps/questapi'
 
 # Configures the version control system to utilize within the workspace.
 vcs:

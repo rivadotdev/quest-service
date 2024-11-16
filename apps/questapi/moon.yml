@@ -1,0 +1,19 @@
+tasks:
+  install:
+    command:
+      npm install --save-dev
+  dev:
+    command: 
+      npm run dev
+  build:
+    command:
+      npm run build
+  start:
+    command:
+      npm start
+  generateprismaclient:
+    command:
+      npx prisma generate
+  migratedb:
+    command:
+      npx prisma migrate dev --name init
