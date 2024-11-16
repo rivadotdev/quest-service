@@ -12,6 +12,7 @@ $schema: 'https://moonrepo.dev/schemas/workspace.json'
 projects:
   docusaurus: 'apps/docs'
   questapi: 'apps/questapi'
+  rewardapi: 'apps/rewardapi'
 
 # Configures the version control system to utilize within the workspace.
 vcs:

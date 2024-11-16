@@ -1,0 +1,13 @@
+tasks:
+  run:
+    command:
+      cargo run
+  clean:
+    command:
+      cargo clean
+  build:
+    command:
+      cargo build
+  dev:
+    command:
+      cargo watch -x run --delay 1
