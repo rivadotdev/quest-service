@@ -1,0 +1,24 @@
+# https://moonrepo.dev/docs/config/workspace
+$schema: 'https://moonrepo.dev/schemas/workspace.json'
+
+# Require a specific version of moon while running commands, otherwise fail.
+# versionConstraint: '>=1.0.0'
+
+# Extend and inherit an external configuration file. Must be a valid HTTPS URL or file system path.
+# extends: './shared/workspace.yml'
+
+# REQUIRED: A list or file system globs for all projects found within the workspace.
+# When using glob patterns, you should avoid map-style project definitions.
+projects:
+  docusaurus: 'apps/docs'
+
+# Configures the version control system to utilize within the workspace.
+vcs:
+  # The client to use when managing the repository.
+  # Accepts "git". Defaults to "git".
+  manager: 'git'
+
+  # The default branch (master/main/trunk) in the repository for comparing the
+  # local branch against. For git, this is typically "master" or "main",
+  # and must include the remote prefix (before /).
+  defaultBranch: 'main'
