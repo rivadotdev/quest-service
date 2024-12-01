@@ -1,0 +1,10 @@
+$schema: 'https://moonrepo.dev/schemas/project.json'
+id: "quest-service"
+type: 'application'
+language: 'rust'
+project:
+  name: "Quest"
+  description: 'A repo management tool.'
+  channel: '#moon'
+  owner: 'infra.platform'
+  maintainers: ['miles.johnson']

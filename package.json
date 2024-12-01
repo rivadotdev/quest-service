@@ -1,0 +1,23 @@
+{
+  "name": "waha-monorepo",
+  "private": true,
+  "license":"AGPL-3.0-only",
+  "author": {
+    "name": "Muhammad Tsany Qudsi",
+    "url": "https://github.com/call-me-q",
+    "email": "tsanyqudsi@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Yoseph Fernando",
+      "url": "https://github.com/yosephfernando"
+    }
+  ],
+  "scripts": {
+    "gen:svc:rs": "npx moon generate service-rust",
+    "gen:db:sea": "npx moon generate db-sea"
+  },
+  "devDependencies": {
+    "@moonrepo/cli": "^1.30.2"
+  }
+}

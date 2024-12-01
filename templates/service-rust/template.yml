@@ -1,0 +1,24 @@
+$schema: 'https://moonrepo.dev/schemas/template.json'
+id: 'service-rust'
+title: 'Generate Service App'
+description: |
+  Scaffolds the initial structure for a service project based on Rust Language,
+  leveraging `ntex` and `sea-orm` crates.
+destination: './apps/[name]'
+variables:
+  name:
+    type: 'string'
+    required: true
+    prompt: 'What is the service name?'
+  db:
+    type: 'enum'
+    default: 'mysql'
+    prompt: 'What is the database type?'
+    values:
+      - value: 'postgres'
+        label: '🐘 PostgresQL'
+      - value: 'mysql'
+        label: '🐬 MySQL'
+      - value: 'sqlite'
+        label: '🦑 SQLite'
+  

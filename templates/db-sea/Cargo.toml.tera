@@ -1,0 +1,13 @@
+---
+force: true
+---
+
+[package]
+name = "quest-service"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ntex = { version = "2.0", features = ["tokio"] }
+sea-orm = { version = "1.1.0", features = ["sqlx-{{db}}", "runtime-tokio", "macros", "debug-print", "with-time", "with-json"] }
+

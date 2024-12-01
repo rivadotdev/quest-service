@@ -1,0 +1,14 @@
+---
+force: true
+---
+
+$schema: 'https://moonrepo.dev/schemas/project.json'
+id: "{{ name | kebab_case }}-service"
+type: 'application'
+language: 'rust'
+project:
+  name: "{{ name | capitalize }}"
+  description: 'A repo management tool.'
+  channel: '#moon'
+  owner: 'infra.platform'
+  maintainers: ['miles.johnson']

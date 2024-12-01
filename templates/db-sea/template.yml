@@ -1,0 +1,17 @@
+# https://moonrepo.dev/docs/config/template
+$schema: 'https://moonrepo.dev/schemas/template.json'
+id: 'db-sea'
+# REQUIRED: Name of the template in a human readable format.
+title: 'Database Generator using SeaORM'
+
+# REQUIRED: Description of what the template is for and other relevant information.
+description: 'This Generator will scaffold the initial structure for a database project based on SeaORM.'
+
+# Mapping of variables that will be interpolated and rendered within template files.
+# Users will be prompted to provide a value when running the generator.
+variables:
+  name:
+    type: 'string'
+    default: ''
+    required: true
+    prompt: 'Package name?'
